@@ -49,8 +49,7 @@ if __name__=='__main__':
     m.CreateMaze()                        //  maze
     path=aStar(m)                         
 
-    a=agent(m,footprints=True)
+    a=agent(m)
     m.tracePath({a:path})
-    l=textLabel(m,'A Star Path Length',len(path)+1)
 
     m.run()
